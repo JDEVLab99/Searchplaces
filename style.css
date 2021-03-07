@@ -1,0 +1,361 @@
+/* CONTENITORE DELLA PAGINA */
+
+#page{
+  position: absolute;
+  overflow-x:hidden;
+  width: 100%;
+  height: 100%;
+  margin-left: 0;
+  mergin-top:0;
+  margin-right: 0;
+  visibility: hidden;
+}
+
+/* GESTIONE DELLA NAV */
+#mynav{
+	position: absolute;
+	z-index: 999;
+	width: 100%;
+}
+
+
+/* STILE DEL BOTTONE ACCEDI */
+#accedi{
+	margin-top: 25px;
+	display: inline-block;
+	padding: 10px 15px;
+	font-size: 15px;
+}
+
+/* STILE DEL BOTTONE REGISTRA */
+#registra{
+	margin-top: 25px;
+	display: inline-block;
+	padding: 10px 15px;
+	font-size: 15px;
+}
+
+/* TITOLO DELL'APPLICAZIONE CHE SAREBBE IL NAVBAR BRAND */
+#titolo{
+	margin-top: 25px;
+	font-size: 50px;
+	margin-left: 10px;
+	font-family: "Arial";
+	color: rgb(255, 255, 255);
+	position: absolute;
+}
+
+/* STILE DELLA NAVBAR */
+.navbar{
+  background-color: rgb(255, 163, 26);
+  opacity: 0.9;
+  width: 100%;
+  height: 137px;
+  position: fixed; /* tiene il menu fisso */
+}
+
+/*GESTIONE CONTENITORE CENTRALE */
+.container1{
+	margin-top: -450px;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	position: center center;
+	position: relative;
+}
+
+/*BOTTONE */
+#citta{
+	font-size: 20px;
+}
+
+/*BOTTONE */
+#query{
+	font-size: 20px;
+}
+
+/*BOTTONE */
+#cerca{
+	font-size: 20px;
+}
+
+/* GESTIONE DEL CAROUSEL, SLIDER DELLE IMMAGINI IN BACKGROUND */
+
+.carousel-inner > .item {
+	min-height: 800px;
+	background-size: cover;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+/* FILTRO SCURO DA APPLICARE ALLE IMMAGINI */
+
+.filter{
+	width: 100%;
+	height:100%;
+	background-color: #000000;
+	position: absolute;
+	z-index: 0;
+	opacity: 0.4;
+}
+
+#categories{
+	height: 200px;
+	margin-top: 300px;
+	position: relative;
+	background-color: white;
+}
+
+/* PAGINA DI CARICAMENTO */
+#loading_screen{
+	display: none;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+	background-color:  #337AB7;
+	background-size: 100%;
+	color: white;
+	text-align: center;
+	opacity: 1;
+}
+
+/* APERTURA MODALE DEL LOGIN */
+.modal-dialog {
+    width: 300px;
+}
+.modal-footer {
+    height: 70px;
+    margin: 0;
+}
+.modal-footer .btn {
+    font-weight: bold;
+}
+.modal-footer .progress {
+    display: none;
+    height: 32px;
+    margin: 0;
+}
+.input-group-addon {
+    color: #fff;
+    background: #3276B1;
+}
+
+/*---------------------------------
+PAGINA DEI DATI
+-----------------------------*/
+
+.container{
+	margin-top: 0px;
+}
+
+#riga{
+	margin-top: 50px;
+}
+
+/*GESTIONE DELLE CARD */
+#elemento{
+	position: relative;
+	margin-left: 0;
+	width: 330px;
+	animation: fadein 1s;
+    -moz-animation: fadein 1s; /* Firefox */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -o-animation: fadein 1s; /* Opera */
+}
+
+/*GESTIONE DELL'EVENTO AL PASSAGGIO DEL MOUSE*/
+#elemento:hover img{
+	transform: scale(1.1);
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    transition: all 0.1s;
+	filter: brightness(.5);
+}
+
+/* CLASSE CHE VERRA' UTILIZZATA PER LA SOVRAPPOSIZIONE */
+.overlay{
+	opacity: 0;
+	margin-left: 135px;
+	margin-top: -150px;
+	font-size: 20px;
+	position: absolute;
+}
+
+/* 	GESTIONE DELL'EVENTO AL PASSAGGIO DEL MOUSE DELLA SCRITTA "CLICCAMI" */
+.card:hover .overlay{
+	opacity: 1;
+	transition: all 0.3s;
+	color: white;
+}
+
+/* GESTIONE DEL CARD BODY CHE CONTIENE IL TESTO */
+.card-body{
+	margin-top: 18px;
+	background: #337AB7!important;
+	/*background: rgb(100, 100, 100);*/
+	opacity: 0.4;
+	color: white;
+}
+
+/* TITOLO PRESENTE NEL CARD-BODY */
+.card-title{
+	font-size: 20px;
+
+}
+
+/* PARAGRAFO PRESENTE NEL CARD-BODY */
+.card-text{
+	margin-top: -7px;
+}
+
+/* EFFETTO FADEIN */
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/*---------------------------------
+PAGINA DEL LUOGO
+-----------------------------*/
+
+#myCarousel1{
+	width: 847px;
+	height: 400px;
+}
+
+#inner{
+	height: 400px;
+}
+/*-----------------------------
+Tablet
+-----------------------------*/
+@media (max-width: 998px){
+	#footer{
+		height: 250px;
+	}
+
+	#myCarousel1{
+		width: 530px;
+		height: 300px;
+	}
+
+	#inner{
+		height: 300px;
+	}
+}
+
+/* telefono */
+@media (max-width: 767px){
+
+	#titolo{
+		position: absolute;
+		margin-top: -120px;
+		margin-left: 0px;
+		font-size: 35px;
+	}
+
+	#accedi{
+		margin-top: 60px;
+		display: inline-block;
+		padding: 5px 10px;
+		font-size: 15px;
+	}
+
+
+
+	#registra{
+		margin-top: 60px;
+		display: inline-block;
+		padding: 5px 10px;
+		font-size: 15px;
+		margin-left: 80px;
+	}
+
+	.container1{
+		margin-top: -350px;
+		color: rgb(255, 255, 255);
+		text-align: center;
+		position: center center;
+		position: relative;
+	}
+
+	#scritta{
+		font-size: 20px;
+	}
+
+	.carousel-inner > .item {
+		min-height: 555px;
+		background-size: cover;
+		background-position: center center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+	}
+
+	#categories{
+		height: 150px;
+		margin-top: 100px;
+		position: relative;
+		background-color: white;
+	}
+
+	#citta{
+		/*padding: 10px;*/
+		width: 250px;
+		font-size: 15px;
+		margin-left: 70px;
+	}
+
+	#query{
+		/*padding: 10px;*/
+		width: 250px;
+		font-size: 15px;
+		margin-left: 70px;
+	}
+
+	#cerca{
+		font-size: 15px;
+	}
+
+	#myCarousel1{
+		width: 328px;
+		height: 200px;
+	}
+
+	#inner{
+		height: 200px;
+	}
+	
+}
